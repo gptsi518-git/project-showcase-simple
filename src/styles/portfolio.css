@@ -372,15 +372,12 @@ html { scroll-behavior: smooth; }
 }
 
 .closed-body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-  padding: 0 0.5rem;
+  display: none;
+  padding: 1.2rem 0.5rem 0;
 }
 
 .closed-section.open .closed-body {
-  max-height: 800px;
-  padding: 1.2rem 0.5rem 0;
+  display: block;
 }
 
 .closed-pw {
