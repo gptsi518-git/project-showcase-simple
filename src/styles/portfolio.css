@@ -352,8 +352,7 @@ html { scroll-behavior: smooth; }
   width: 100%;
   font-family: 'Source Sans 3', sans-serif;
   text-align: left;
-  position: relative;
-  z-index: 2;
+  appearance: none;
 }
 
 .closed-trigger:hover {
@@ -376,8 +375,6 @@ html { scroll-behavior: smooth; }
 .closed-body {
   display: none;
   padding: 1.2rem 0.5rem 0;
-  position: relative;
-  z-index: 3;
 }
 
 .closed-section.open .closed-body {
@@ -388,6 +385,7 @@ html { scroll-behavior: smooth; }
   display: flex; gap: 0.5rem;
   margin-bottom: 1.2rem;
   max-width: 400px;
+  position: relative;
 }
 
 .closed-pw input {
@@ -397,8 +395,6 @@ html { scroll-behavior: smooth; }
   font-size: 0.95rem; background: var(--white);
   color: var(--text); outline: none;
   transition: border-color 0.25s;
-  position: relative;
-  z-index: 4;
   pointer-events: auto;
 }
 
@@ -411,8 +407,6 @@ html { scroll-behavior: smooth; }
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 700; font-size: 0.95rem;
   cursor: pointer; transition: all 0.25s;
-  position: relative;
-  z-index: 4;
 }
 
 .closed-pw button:hover { background: var(--burgundy); }
