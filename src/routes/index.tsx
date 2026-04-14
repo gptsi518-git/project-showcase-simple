@@ -18,7 +18,6 @@ export const Route = createFileRoute("/")({
 });
 
 function PortfolioPage() {
-  const [closedOpen, setClosedOpen] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const [pwError, setPwError] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
@@ -187,62 +186,45 @@ function PortfolioPage() {
       </section>
 
       {/* Closed projects */}
-      <section className={`closed-section reveal${closedOpen ? ' open' : ''}`} id="closed-section">
-        <button
-          type="button"
-          className="closed-trigger"
-          onClick={() => setClosedOpen(true)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              setClosedOpen(true);
-            }
-          }}
-          aria-expanded={closedOpen}
-          aria-controls="closed-projects-body"
-        >
+      <section className="closed-section reveal open" id="closed-section">
+        <div className="closed-trigger">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
           <span className="closed-trigger-text">Проекты в разработке</span>
           <svg className="closed-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-        {closedOpen && (
-          <div className="closed-body" id="closed-projects-body">
-            {!unlocked && (
-              <div className="closed-pw">
-                <input
-                  type="password"
-                  ref={pwRef}
-                  placeholder="Введите пароль"
-                  style={pwError ? { borderColor: '#CF3B5F' } : undefined}
-                  onClick={(e) => e.stopPropagation()}
-                  onKeyDown={(e) => {
-                    e.stopPropagation();
-                    if (e.key === 'Enter') checkPassword();
-                  }}
-                />
-                <button type="button" onClick={(e) => {
-                  e.stopPropagation();
-                  void checkPassword();
-                }}>Войти</button>
-              </div>
-            )}
-            {pwError && <div className="closed-pw-error" style={{ display: 'block' }}>Неверный пароль</div>}
-            <div className={`closed-projects${unlocked ? ' unlocked' : ''}`}>
-              <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
-                <ThumbPlaceholder />
-                <div className="k-card-head"><div className="k-card-name">Портфолио</div><span className="k-card-arrow">→</span></div>
-                <div className="k-card-desc">Лендинг-портфолио с подстраницами кейсов.</div>
-                <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>сайт</span>
-              </a>
-              <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
-                <ThumbPlaceholder />
-                <div className="k-card-head"><div className="k-card-name">Сайт TeamLab</div><span className="k-card-arrow">→</span></div>
-                <div className="k-card-desc">4 HTML-страницы с единой дизайн-системой.</div>
-                <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>сайт</span>
-              </a>
+        </div>
+        <div className="closed-body" id="closed-projects-body">
+          {!unlocked && (
+            <div className="closed-pw">
+              <input
+                type="password"
+                ref={pwRef}
+                placeholder="Введите пароль"
+                style={pwError ? { borderColor: '#CF3B5F' } : undefined}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') checkPassword();
+                }}
+              />
+              <button type="button" onClick={() => {
+                void checkPassword();
+              }}>Войти</button>
             </div>
+          )}
+          {pwError && <div className="closed-pw-error" style={{ display: 'block' }}>Неверный пароль</div>}
+          <div className={`closed-projects${unlocked ? ' unlocked' : ''}`}>
+            <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
+              <ThumbPlaceholder />
+              <div className="k-card-head"><div className="k-card-name">Портфолио</div><span className="k-card-arrow">→</span></div>
+              <div className="k-card-desc">Лендинг-портфолио с подстраницами кейсов.</div>
+              <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>сайт</span>
+            </a>
+            <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
+              <ThumbPlaceholder />
+              <div className="k-card-head"><div className="k-card-name">Сайт TeamLab</div><span className="k-card-arrow">→</span></div>
+              <div className="k-card-desc">4 HTML-страницы с единой дизайн-системой.</div>
+              <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>сайт</span>
+            </a>
           </div>
-        )}
+        </div>
       </section>
 
       {/* About */}
