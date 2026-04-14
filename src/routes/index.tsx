@@ -190,11 +190,11 @@ function PortfolioPage() {
       <section className={`closed-section reveal${closedOpen ? ' open' : ''}`} id="closed-section">
         <div
           className="closed-trigger"
-          onClick={() => setClosedOpen((prev) => !prev)}
+          onClick={() => setClosedOpen(true)}
           onKeyDown={(e) => {
             if (e.key === "Enter" || e.key === " ") {
               e.preventDefault();
-              setClosedOpen((prev) => !prev);
+              setClosedOpen(true);
             }
           }}
           role="button"
