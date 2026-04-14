@@ -241,7 +241,7 @@ function PortfolioPage() {
 
       {/* Footer */}
       <footer className="portfolio-footer">
-        <p><a href="tel:+79262582905">8 926 258 29 05</a> · <a href="mailto:esidorenko@teamlab.ru">esidorenko@teamlab.ru</a></p>
+        <p><a href="tel:+79262582905">8 926 258 29 05</a> · <a href="mailto:sev1coaching@gmail.com">sev1coaching@gmail.com</a></p>
         <p style={{ marginTop: '0.4rem' }}>© 2026 Елена Сидоренко</p>
       </footer>
 
