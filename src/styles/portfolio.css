@@ -366,12 +366,8 @@ html { scroll-behavior: smooth; }
 .closed-chevron { color: var(--cocoa); }
 
 .closed-body {
-  display: none;
-  padding: 1.2rem 0.5rem 0;
-}
-
-.closed-section.open .closed-body {
   display: block;
+  padding: 1.2rem 0.5rem 0;
 }
 
 .closed-pw {
