@@ -107,7 +107,7 @@ function PortfolioPage() {
 
       {/* Stats */}
       <div className="stats-bar reveal">
-        <div className="stat"><div className="stat-num">9</div><div className="stat-label">проектов</div></div>
+        <div className="stat"><div className="stat-num">10</div><div className="stat-label">проектов</div></div>
         <div className="stat"><div className="stat-num">3</div><div className="stat-label">категории</div></div>
       </div>
 
@@ -171,7 +171,7 @@ function PortfolioPage() {
             <div className="col-head ch-auto">
               <div className="col-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
               <div className="col-info"><div className="col-label">Автоматизация</div><div className="col-sublabel">Ускорение разработки</div></div>
-              <div className="col-count">2</div>
+              <div className="col-count">3</div>
             </div>
             <div className="col-body cb-auto">
               <a href="https://sev-prompt.lovable.app" className="k-card" target="_blank" rel="noopener noreferrer">
@@ -184,6 +184,12 @@ function PortfolioPage() {
                 <ThumbWithImage src="img/t2m.png" />
                 <div className="k-card-head"><div className="k-card-name">Калькулятор T2M</div><span className="k-card-arrow">→</span></div>
                 <div className="k-card-desc">Интерактивный калькулятор Time-to-Market. Позволяет увидеть, за счёт чего можно сократить время разработки образовательного продукта при помощи ИИ.</div>
+                <span className="k-card-tag kt-auto">инструмент</span>
+              </a>
+              <a href="#" className="k-card" aria-disabled="true" onClick={(e) => e.preventDefault()}>
+                <ThumbPlaceholder />
+                <div className="k-card-head"><div className="k-card-name">Генерация кейсов</div><span className="k-card-arrow">→</span></div>
+                <div className="k-card-desc">Автоматическая генерация учебных кейсов на основе поиска актуальных новостей в области железнодорожного транспорта по всему миру. Свежая фактура для тренингов и разборов — без ручного мониторинга.</div>
                 <span className="k-card-tag kt-auto">инструмент</span>
               </a>
             </div>
