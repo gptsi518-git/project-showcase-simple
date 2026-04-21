@@ -171,7 +171,7 @@ function PortfolioPage() {
             <div className="col-head ch-auto">
               <div className="col-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
               <div className="col-info"><div className="col-label">Автоматизация</div><div className="col-sublabel">Ускорение разработки</div></div>
-              <div className="col-count">2</div>
+              <div className="col-count">3</div>
             </div>
             <div className="col-body cb-auto">
               <a href="https://sev-prompt.lovable.app" className="k-card" target="_blank" rel="noopener noreferrer">
