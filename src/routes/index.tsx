@@ -187,7 +187,7 @@ function PortfolioPage() {
                 <span className="k-card-tag kt-auto">инструмент</span>
               </a>
               <a href="#" className="k-card" aria-disabled="true" onClick={(e) => e.preventDefault()}>
-                <ThumbPlaceholder />
+                <ThumbWithImage src="img/cases.png" />
                 <div className="k-card-head"><div className="k-card-name">Генерация кейсов</div><span className="k-card-arrow">→</span></div>
                 <div className="k-card-desc">Автоматическая генерация учебных кейсов на основе поиска актуальных новостей в области железнодорожного транспорта по всему миру. Свежая фактура для тренингов и разборов — без ручного мониторинга.</div>
                 <span className="k-card-tag kt-auto">инструмент</span>
