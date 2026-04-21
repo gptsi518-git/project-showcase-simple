@@ -107,7 +107,7 @@ function PortfolioPage() {
 
       {/* Stats */}
       <div className="stats-bar reveal">
-        <div className="stat"><div className="stat-num">8</div><div className="stat-label">проектов</div></div>
+        <div className="stat"><div className="stat-num">9</div><div className="stat-label">проектов</div></div>
         <div className="stat"><div className="stat-num">3</div><div className="stat-label">категории</div></div>
       </div>
 
@@ -119,7 +119,7 @@ function PortfolioPage() {
             <div className="col-head ch-infra">
               <div className="col-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg></div>
               <div className="col-info"><div className="col-label">Инфраструктура</div><div className="col-sublabel">Методическая база</div></div>
-              <div className="col-count">2</div>
+              <div className="col-count">3</div>
             </div>
             <div className="col-body cb-infra">
               <a href="https://sev-umm.lovable.app" className="k-card" target="_blank" rel="noopener noreferrer">
@@ -134,6 +134,15 @@ function PortfolioPage() {
                 <div className="k-card-desc">Структурированная коллекция тренерских активностей — разминки, упражнения, рефлексии. Быстрый подбор по цели, формату, размеру группы.</div>
                 <span className="k-card-tag kt-infra">инструмент</span>
               </a>
+              <div className="k-card k-card-soon" aria-disabled="true">
+                <ThumbPlaceholder />
+                <div className="k-card-head">
+                  <div className="k-card-name">Расписание центра</div>
+                  <span className="k-card-tag kt-soon">скоро</span>
+                </div>
+                <div className="k-card-desc">Единое расписание T&amp;D-центра: фильтры по сотрудникам, типам событий, локациям и датам. Графики Ганта в двух разрезах — по сотрудникам и по событиям.</div>
+                <span className="k-card-tag kt-infra">платформа</span>
+              </div>
             </div>
           </div>
 
