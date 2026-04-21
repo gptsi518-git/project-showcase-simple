@@ -333,6 +333,32 @@ html { scroll-behavior: smooth; }
 .kt-infra { background: rgba(100,133,162,0.15); color: var(--col-infra-deep); }
 .kt-skills { background: rgba(207,59,95,0.12); color: var(--col-skills-deep); }
 .kt-auto { background: rgba(115,17,24,0.12); color: var(--col-auto); }
+.kt-soon {
+  background: rgba(83,53,49,0.1);
+  color: var(--cocoa);
+  border: 1px dashed rgba(83,53,49,0.35);
+}
+
+.k-card-soon {
+  cursor: default;
+  opacity: 0.92;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--white),
+    var(--white) 12px,
+    rgba(100,133,162,0.04) 12px,
+    rgba(100,133,162,0.04) 24px
+  );
+}
+
+.k-card-soon:hover {
+  transform: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.k-card-soon .k-card-head {
+  align-items: center;
+}
 
 .closed-section {
   padding: 0 2rem 3rem;
