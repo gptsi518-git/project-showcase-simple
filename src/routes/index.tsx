@@ -134,15 +134,12 @@ function PortfolioPage() {
                 <div className="k-card-desc">Структурированная коллекция тренерских активностей — разминки, упражнения, рефлексии. Быстрый подбор по цели, формату, размеру группы.</div>
                 <span className="k-card-tag kt-infra">инструмент</span>
               </a>
-              <div className="k-card k-card-soon" aria-disabled="true">
-                <ThumbPlaceholder />
-                <div className="k-card-head">
-                  <div className="k-card-name">Расписание центра</div>
-                  <span className="k-card-tag kt-soon">скоро</span>
-                </div>
+              <a href="#" className="k-card" aria-disabled="true" onClick={(e) => e.preventDefault()}>
+                <ThumbWithImage src="img/schedule.png" />
+                <div className="k-card-head"><div className="k-card-name">Расписание центра</div><span className="k-card-arrow">→</span></div>
                 <div className="k-card-desc">Единое расписание T&amp;D-центра: фильтры по сотрудникам, типам событий, локациям и датам. Графики Ганта в двух разрезах — по сотрудникам и по событиям.</div>
                 <span className="k-card-tag kt-infra">платформа</span>
-              </div>
+              </a>
             </div>
           </div>
 
