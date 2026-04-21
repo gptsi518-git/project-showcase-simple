@@ -107,7 +107,7 @@ function PortfolioPage() {
 
       {/* Stats */}
       <div className="stats-bar reveal">
-        <div className="stat"><div className="stat-num">9</div><div className="stat-label">проектов</div></div>
+        <div className="stat"><div className="stat-num">10</div><div className="stat-label">проектов</div></div>
         <div className="stat"><div className="stat-num">3</div><div className="stat-label">категории</div></div>
       </div>
 
