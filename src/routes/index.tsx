@@ -242,8 +242,7 @@ function PortfolioPage() {
       {/* About */}
       <section className="about reveal">
         <div className="about-photo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-          <span className="photo-hint">фото</span>
+          <img src="img/author.jpg" alt="Елена Сидоренко" />
         </div>
         <div className="about-text">
           <h2>Об авторе</h2>
