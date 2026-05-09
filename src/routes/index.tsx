@@ -250,7 +250,7 @@ function PortfolioPage() {
             <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
               <ThumbPlaceholder />
               <div className="k-card-head"><div className="k-card-name">ОС микробизнеса</div><span className="k-card-arrow">→</span></div>
-              <div className="k-card-desc">Операционная система собственного микробизнеса: клиенты, проекты, финансы, контент и задачи в едином контуре — без зоопарка сервисов.</div>
+              <div className="k-card-desc">Структура, которая помогает не запутаться в контактах, лидах и разговорах и не забыть выполнить нужное действие. Все касания с людьми, договорённости и следующие шаги — в одном месте.</div>
               <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>платформа</span>
             </a>
           </div>
