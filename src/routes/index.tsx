@@ -235,6 +235,24 @@ function PortfolioPage() {
               <div className="k-card-desc">4 HTML-страницы с единой дизайн-системой.</div>
               <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>сайт</span>
             </a>
+            <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
+              <ThumbPlaceholder />
+              <div className="k-card-head"><div className="k-card-name">Платформа для мастермайндов</div><span className="k-card-arrow">→</span></div>
+              <div className="k-card-desc">Пространство для проведения мастермайнд-встреч: систематизация идей, голосовой набор заметок, фиксация решений и обязательств участников.</div>
+              <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>платформа</span>
+            </a>
+            <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
+              <ThumbPlaceholder />
+              <div className="k-card-head"><div className="k-card-name">Пространство коуча и коучи</div><span className="k-card-arrow">→</span></div>
+              <div className="k-card-desc">Единая среда для совместной работы коуча и клиента: цели и запросы, заметки сессий, домашние задания, прогресс между встречами и история взаимодействия в одном месте.</div>
+              <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>платформа</span>
+            </a>
+            <a href="#" className="k-card" target="_blank" rel="noopener noreferrer">
+              <ThumbPlaceholder />
+              <div className="k-card-head"><div className="k-card-name">ОС микробизнеса</div><span className="k-card-arrow">→</span></div>
+              <div className="k-card-desc">Операционная система собственного микробизнеса: клиенты, проекты, финансы, контент и задачи в едином контуре — без зоопарка сервисов.</div>
+              <span className="k-card-tag" style={{ background: 'rgba(83,53,49,0.1)', color: 'var(--cocoa)' }}>платформа</span>
+            </a>
           </div>
         </div>
       </section>
